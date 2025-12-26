@@ -1,0 +1,152 @@
+{
+  "leetcode": {
+    "username": "VSPRIME",
+    "rating": 1819,
+    "maxRating": 1819,
+    "solved": 683,
+    "easySolved": 195,
+    "mediumSolved": 389,
+    "hardSolved": 99,
+    "percentile": "Top 6.9%",
+    "ranking": 82760,
+    "badges": [
+      {
+        "id": "8699095",
+        "name": "365 Days Badge",
+        "shortName": "365 Days Badge",
+        "icon": "https://assets.leetcode.com/static_assets/marketing/lg365.png",
+        "category": "SUBMISSION",
+        "creationDate": "2025-11-20"
+      },
+      {
+        "id": "8922892",
+        "name": "Annual Badge 2025",
+        "shortName": "Annual Badge 2025",
+        "icon": "https://assets.leetcode.com/static_assets/others/2025_lg.png",
+        "category": "ANNUAL",
+        "creationDate": "2025-12-14"
+      },
+      {
+        "id": "7988706",
+        "name": "200 Days Badge 2025",
+        "shortName": "200 Days Badge 2025",
+        "icon": "https://assets.leetcode.com/static_assets/others/lg200.png",
+        "category": "ANNUAL",
+        "creationDate": "2025-09-03"
+      },
+      {
+        "id": "7119757",
+        "name": "100 Days Badge 2025",
+        "shortName": "100 Days Badge 2025",
+        "icon": "https://assets.leetcode.com/static_assets/others/lg25100.png",
+        "category": "ANNUAL",
+        "creationDate": "2025-05-24"
+      },
+      {
+        "id": "6736993",
+        "name": "50 Days Badge 2025",
+        "shortName": "50 Days Badge 2025",
+        "icon": "https://assets.leetcode.com/static_assets/others/lg2550.png",
+        "category": "ANNUAL",
+        "creationDate": "2025-04-04"
+      },
+      {
+        "id": "5007932",
+        "name": "50 Days Badge 2024",
+        "shortName": "50 Days Badge 2024",
+        "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
+        "category": "ANNUAL",
+        "creationDate": "2024-09-25"
+      },
+      {
+        "id": "8813731",
+        "name": "Nov LeetCoding Challenge",
+        "shortName": "Nov Badge",
+        "icon": "/static/images/badges/dcc-2025-11.png",
+        "category": "DCC",
+        "creationDate": "2025-11-30"
+      },
+      {
+        "id": "8565030",
+        "name": "Oct LeetCoding Challenge",
+        "shortName": "Oct Badge",
+        "icon": "/static/images/badges/dcc-2025-10.png",
+        "category": "DCC",
+        "creationDate": "2025-10-31"
+      },
+      {
+        "id": "8253131",
+        "name": "Sep LeetCoding Challenge",
+        "shortName": "Sep Badge",
+        "icon": "/static/images/badges/dcc-2025-9.png",
+        "category": "DCC",
+        "creationDate": "2025-09-30"
+      },
+      {
+        "id": "7957682",
+        "name": "Aug LeetCoding Challenge",
+        "shortName": "Aug Badge",
+        "icon": "/static/images/badges/dcc-2025-8.png",
+        "category": "DCC",
+        "creationDate": "2025-08-31"
+      },
+      {
+        "id": "7672775",
+        "name": "Jul LeetCoding Challenge",
+        "shortName": "Jul Badge",
+        "icon": "/static/images/badges/dcc-2025-7.png",
+        "category": "DCC",
+        "creationDate": "2025-07-31"
+      },
+      {
+        "id": "7392054",
+        "name": "Jun LeetCoding Challenge",
+        "shortName": "Jun Badge",
+        "icon": "/static/images/badges/dcc-2025-6.png",
+        "category": "DCC",
+        "creationDate": "2025-06-30"
+      },
+      {
+        "id": "7184835",
+        "name": "May LeetCoding Challenge",
+        "shortName": "May Badge",
+        "icon": "/static/images/badges/dcc-2025-5.png",
+        "category": "DCC",
+        "creationDate": "2025-05-31"
+      },
+      {
+        "id": "6928996",
+        "name": "Apr LeetCoding Challenge",
+        "shortName": "Apr Badge",
+        "icon": "/static/images/badges/dcc-2025-4.png",
+        "category": "DCC",
+        "creationDate": "2025-04-30"
+      },
+      {
+        "id": "5041805",
+        "name": "Sep LeetCoding Challenge",
+        "shortName": "Sep Badge",
+        "icon": "/static/images/badges/dcc-2024-9.png",
+        "category": "DCC",
+        "creationDate": "2024-09-30"
+      },
+      {
+        "id": "6196510",
+        "name": "LeetCode 75",
+        "shortName": "LeetCode 75",
+        "icon": "https://assets.leetcode.com/static_assets/others/LeetCode_75.png",
+        "category": "STUDY_PLAN",
+        "creationDate": "2025-02-16"
+      }
+    ]
+  },
+  "codechef": {
+    "username": "vsprime",
+    "stars": 3,
+    "rating": 1763,
+    "maxRating": 1763,
+    "globalRank": 6499,
+    "countryRank": 5555
+  },
+  "lastUpdated": "2025-12-25"
+}

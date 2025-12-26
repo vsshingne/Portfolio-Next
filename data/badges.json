@@ -1,0 +1,42 @@
+[
+    {
+        "id": "leetcode-50-days",
+        "name": "50 Days Badge",
+        "description": "Solved problems for 50 consecutive days",
+        "platform": "LeetCode",
+        "imagePath": "/badges/leetcode-50.png",
+        "dateEarned": "2024-10-15"
+    },
+    {
+        "id": "leetcode-100-days",
+        "name": "100 Days Badge",
+        "description": "Solved problems for 100 consecutive days",
+        "platform": "LeetCode",
+        "imagePath": "/badges/leetcode-100.png",
+        "dateEarned": "2024-12-15"
+    },
+    {
+        "id": "codechef-3-star",
+        "name": "3 Star",
+        "description": "Achieved 3 star rating on CodeChef",
+        "platform": "CodeChef",
+        "imagePath": "/badges/codechef-3star.png",
+        "dateEarned": "2024-09-01"
+    },
+    {
+        "id": "robotics-winner",
+        "name": "Robotechnic '25 Winner",
+        "description": "First place in Robotics competition",
+        "platform": "Competition",
+        "imagePath": "/badges/robotics-winner.png",
+        "dateEarned": "2025-01-10"
+    },
+    {
+        "id": "ieee-finalist",
+        "name": "IEEE TechSangam Finalist",
+        "description": "Finalist in IEEE TechSangam 2025",
+        "platform": "Competition",
+        "imagePath": "/badges/ieee-finalist.png",
+        "dateEarned": "2025-01-20"
+    }
+]
