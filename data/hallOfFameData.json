@@ -1,15 +1,23 @@
 {
   "leetcode": {
     "username": "VSPRIME",
-    "rating": 1819,
-    "maxRating": 1819,
-    "solved": 683,
-    "easySolved": 195,
-    "mediumSolved": 389,
-    "hardSolved": 99,
-    "percentile": "Top 6.9%",
-    "ranking": 82760,
+    "rating": 1849,
+    "maxRating": 1849,
+    "solved": 690,
+    "easySolved": 196,
+    "mediumSolved": 394,
+    "hardSolved": 100,
+    "percentile": "Top 5.9%",
+    "ranking": 80908,
     "badges": [
+      {
+        "id": "9076337",
+        "name": "Knight",
+        "shortName": "Knight",
+        "icon": "/static/images/badges/knight.png",
+        "category": "COMPETITION",
+        "creationDate": "2025-12-31"
+      },
       {
         "id": "8699095",
         "name": "365 Days Badge",
@@ -57,6 +65,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
         "category": "ANNUAL",
         "creationDate": "2024-09-25"
+      },
+      {
+        "id": "9042863",
+        "name": "Dec LeetCoding Challenge",
+        "shortName": "Dec Badge",
+        "icon": "/static/images/badges/dcc-2025-12.png",
+        "category": "DCC",
+        "creationDate": "2025-12-31"
       },
       {
         "id": "8813731",
@@ -148,5 +164,5 @@
     "globalRank": 6499,
     "countryRank": 5555
   },
-  "lastUpdated": "2025-12-25"
+  "lastUpdated": "2025-12-31"
 }
