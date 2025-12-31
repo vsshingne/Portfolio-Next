@@ -8,6 +8,7 @@ import {
   FaNode,
   FaJs,
   FaReact,
+  FaJava,
 } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 import {
@@ -31,7 +32,7 @@ export const aboutData = [
     info: [
       {
         title: "Programming Languages",
-        icons: [SiCplusplus, FaPython, FaJs, FaNode],
+        icons: [SiCplusplus, FaPython, FaJs, FaNode, FaJava],
         stage: "",
       },
       {
