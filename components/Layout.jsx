@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       </Head>
 
       {/* Particles - positioned behind video */}
-      <div className="fixed top-0 left-0 w-full h-full -z-20 overflow-hidden">
+      <div className="fixed top-0 left-0 w-full h-full -z-9 overflow-hidden">
         <ParticlesContainer />
       </div>
 
