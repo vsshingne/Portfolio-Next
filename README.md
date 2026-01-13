@@ -56,11 +56,9 @@ This script:
 
 ### Connect with Me
 
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- 🐱 GitHub: [github.com/yourusername](https://github.com/yourusername)
-- 💻 CodeChef: 3★ (Rating: 1763)
-- 🏆 LeetCode: Daily Coding Challenge Badges
+- 📧 Email: [your-email@example.com](mailto:vaibhavshingne66@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/vaibhav-shingne-3a765828a/)
+- 🐱 GitHub: [github.com/yourusername](https://github.com/vsshingne)
 
 ## 🙏 Acknowledgments
 
