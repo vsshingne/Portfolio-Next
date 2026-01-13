@@ -62,7 +62,6 @@ This script:
 
 ## 🙏 Acknowledgments
 
-- Inspired by modern portfolio designs
 - Icons from [React Icons](https://react-icons.github.io/react-icons/)
 - Animations powered by [Framer Motion](https://www.framer.com/motion/)
 - Built with [Next.js](https://nextjs.org/)
