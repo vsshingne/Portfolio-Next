@@ -3,12 +3,12 @@
     "username": "VSPRIME",
     "rating": 1849,
     "maxRating": 1849,
-    "solved": 717,
-    "easySolved": 206,
+    "solved": 718,
+    "easySolved": 207,
     "mediumSolved": 406,
     "hardSolved": 105,
     "percentile": "Top 5.9%",
-    "ranking": 73816,
+    "ranking": 73595,
     "badges": [
       {
         "id": "9133569",
@@ -164,5 +164,5 @@
     "globalRank": 6427,
     "countryRank": 5499
   },
-  "lastUpdated": "2026-01-12"
+  "lastUpdated": "2026-01-13"
 }
