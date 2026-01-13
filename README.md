@@ -56,9 +56,9 @@ This script:
 
 ### Connect with Me
 
-- 📧 Email: [your-email@example.com](mailto:vaibhavshingne66@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/vaibhav-shingne-3a765828a/)
-- 🐱 GitHub: [github.com/yourusername](https://github.com/vsshingne)
+- 📧 Email: [vaibhavshingne66@gmail.com](mailto:vaibhavshingne66@gmail.com)
+- 💼 LinkedIn: [Vaibhav Shingne](https://www.linkedin.com/in/vaibhav-shingne-3a765828a/)
+- 🐱 GitHub: [github.com/vsshingne](https://github.com/vsshingne)
 
 ## 🙏 Acknowledgments
 
