@@ -1,22 +1,22 @@
 {
   "leetcode": {
     "username": "VSPRIME",
-    "rating": 1849,
-    "maxRating": 1849,
-    "solved": 722,
+    "rating": 1928,
+    "maxRating": 1928,
+    "solved": 728,
     "easySolved": 207,
-    "mediumSolved": 409,
-    "hardSolved": 106,
-    "percentile": "Top 5.9%",
-    "ranking": 72595,
+    "mediumSolved": 412,
+    "hardSolved": 109,
+    "percentile": "Top 3.7%",
+    "ranking": 71070,
     "badges": [
       {
-        "id": "9133569",
+        "id": "9175489",
         "name": "Knight",
         "shortName": "Knight",
         "icon": "/static/images/badges/knight.png",
         "category": "COMPETITION",
-        "creationDate": "2026-01-07"
+        "creationDate": "2026-01-15"
       },
       {
         "id": "8699095",
