@@ -3,9 +3,9 @@
     "username": "VSPRIME",
     "rating": 1976,
     "maxRating": 1976,
-    "solved": 743,
+    "solved": 744,
     "easySolved": 210,
-    "mediumSolved": 424,
+    "mediumSolved": 425,
     "hardSolved": 109,
     "percentile": "Top 2.8%",
     "ranking": 67556,
@@ -160,9 +160,9 @@
     "username": "vsprime",
     "stars": 3,
     "rating": 1763,
-    "maxRating": 1793,
+    "maxRating": 1763,
     "globalRank": 6423,
     "countryRank": 5517
   },
-  "lastUpdated": "2026-01-22"
+  "lastUpdated": "2026-01-23"
 }
