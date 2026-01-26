@@ -13,7 +13,7 @@ const sora = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
-const Layout = ({ children }) => {
+const Layout = ({ children, router }) => {
   return (
     <main
       className={`page text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-hidden`}
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
 
       {/* Particles - positioned behind video */}
       <div className="fixed top-0 left-0 w-full h-full -z-9 overflow-hidden">
-        <ParticlesContainer />
+        <ParticlesContainer key={router?.route || 'default'} />
       </div>
 
       {/* Background Video */}
@@ -58,8 +58,10 @@ const Layout = ({ children }) => {
       <Nav />
       <Header />
 
-      {/* main content */}
-      {children}
+      {/* main content - scrollable container */}
+      <div className="h-screen overflow-y-auto">
+        {children}
+      </div>
     </main>
   );
 };
