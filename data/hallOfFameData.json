@@ -3,20 +3,20 @@
     "username": "VSPRIME",
     "rating": 1966,
     "maxRating": 1966,
-    "solved": 780,
-    "easySolved": 218,
-    "mediumSolved": 446,
-    "hardSolved": 116,
+    "solved": 789,
+    "easySolved": 220,
+    "mediumSolved": 451,
+    "hardSolved": 118,
     "percentile": "Top 3.0%",
-    "ranking": 59820,
+    "ranking": 59619,
     "badges": [
       {
-        "id": "9407460",
+        "id": "9449350",
         "name": "Knight",
         "shortName": "Knight",
         "icon": "/static/images/badges/knight.png",
         "category": "COMPETITION",
-        "creationDate": "2026-02-06"
+        "creationDate": "2026-02-11"
       },
       {
         "id": "8699095",
@@ -155,6 +155,14 @@
         "creationDate": "2024-09-30"
       },
       {
+        "id": "9456317",
+        "name": "Algorithm Deconstructor Badge",
+        "shortName": "Algorithm Deconstructor Badge",
+        "icon": "https://assets.leetcode.com/static_assets/others/Quest_Algorithm_Large.png",
+        "category": "COMPETITION",
+        "creationDate": "2026-02-11"
+      },
+      {
         "id": "6196510",
         "name": "LeetCode 75",
         "shortName": "LeetCode 75",
@@ -169,8 +177,8 @@
     "stars": 3,
     "rating": 1763,
     "maxRating": 1763,
-    "globalRank": 6364,
-    "countryRank": 5470
+    "globalRank": 6349,
+    "countryRank": 5462
   },
-  "lastUpdated": "2026-02-11"
+  "lastUpdated": "2026-02-12"
 }
