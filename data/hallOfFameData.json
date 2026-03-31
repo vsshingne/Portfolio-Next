@@ -3,12 +3,12 @@
     "username": "VSPRIME",
     "rating": 2038,
     "maxRating": 2038,
-    "solved": 871,
+    "solved": 872,
     "easySolved": 250,
     "mediumSolved": 489,
-    "hardSolved": 132,
+    "hardSolved": 133,
     "percentile": "Top 2.0%",
-    "ranking": 44967,
+    "ranking": 44852,
     "badges": [
       {
         "id": "9873349",
@@ -73,6 +73,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
         "category": "ANNUAL",
         "creationDate": "2024-09-25"
+      },
+      {
+        "id": "9898774",
+        "name": "Mar LeetCoding Challenge",
+        "shortName": "Mar Badge",
+        "icon": "/static/images/badges/dcc-2026-3.png",
+        "category": "DCC",
+        "creationDate": "2026-03-31"
       },
       {
         "id": "9601287",
