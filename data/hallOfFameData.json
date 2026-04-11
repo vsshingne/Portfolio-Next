@@ -3,20 +3,20 @@
     "username": "VSPRIME",
     "rating": 2048,
     "maxRating": 2048,
-    "solved": 881,
-    "easySolved": 251,
+    "solved": 882,
+    "easySolved": 252,
     "mediumSolved": 494,
     "hardSolved": 136,
     "percentile": "Top 1.9%",
-    "ranking": 43772,
+    "ranking": 43812,
     "badges": [
       {
-        "id": "9955723",
+        "id": "10014812",
         "name": "Knight",
         "shortName": "Knight",
         "icon": "/static/images/badges/knight.png",
         "category": "COMPETITION",
-        "creationDate": "2026-04-01"
+        "creationDate": "2026-04-10"
       },
       {
         "id": "9968874",
@@ -212,5 +212,5 @@
     "globalRank": 6023,
     "countryRank": 5193
   },
-  "lastUpdated": "2026-04-10"
+  "lastUpdated": "2026-04-11"
 }
