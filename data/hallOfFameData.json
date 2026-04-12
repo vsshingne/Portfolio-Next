@@ -3,12 +3,12 @@
     "username": "VSPRIME",
     "rating": 2048,
     "maxRating": 2048,
-    "solved": 882,
-    "easySolved": 252,
-    "mediumSolved": 494,
+    "solved": 886,
+    "easySolved": 253,
+    "mediumSolved": 497,
     "hardSolved": 136,
     "percentile": "Top 1.9%",
-    "ranking": 43812,
+    "ranking": 43524,
     "badges": [
       {
         "id": "10014812",
@@ -33,6 +33,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/lg365.png",
         "category": "SUBMISSION",
         "creationDate": "2025-11-20"
+      },
+      {
+        "id": "10032097",
+        "name": "100 Days Badge 2026",
+        "shortName": "100 Days Badge 2026",
+        "icon": "https://assets.leetcode.com/static_assets/others/100_1080_1080.png",
+        "category": "ANNUAL",
+        "creationDate": "2026-04-11"
       },
       {
         "id": "9505216",
@@ -212,5 +220,5 @@
     "globalRank": 6023,
     "countryRank": 5193
   },
-  "lastUpdated": "2026-04-11"
+  "lastUpdated": "2026-04-12"
 }
