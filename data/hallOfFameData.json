@@ -3,12 +3,12 @@
     "username": "VSPRIME",
     "rating": 2036,
     "maxRating": 2036,
-    "solved": 903,
-    "easySolved": 257,
+    "solved": 904,
+    "easySolved": 258,
     "mediumSolved": 506,
     "hardSolved": 140,
     "percentile": "Top 2.1%",
-    "ranking": 41789,
+    "ranking": 41072,
     "badges": [
       {
         "id": "10155455",
@@ -214,11 +214,11 @@
   },
   "codechef": {
     "username": "vsprime",
-    "stars": 3,
-    "rating": 1763,
-    "maxRating": 1763,
-    "globalRank": 5968,
-    "countryRank": 5152
+    "stars": 0,
+    "rating": 0,
+    "maxRating": 0,
+    "globalRank": 0,
+    "countryRank": 0
   },
-  "lastUpdated": "2026-04-24"
+  "lastUpdated": "2026-04-25"
 }
