@@ -122,8 +122,6 @@ async function fetchLeetCodeStats() {
 /**
  * Fetch CodeChef stats using web scraping
  */
-const cheerio = require('cheerio');
-
 async function fetchCodeChefStats() {
     try {
         console.log(`Fetching CodeChef stats for ${CONFIG.codechefUsername}...`);
@@ -133,7 +131,11 @@ async function fetchCodeChefStats() {
             {
                 headers: {
                     'User-Agent':
-                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36'
+                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36',
+                    'Accept':
+                        'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Cache-Control': 'no-cache'
                 },
                 signal: AbortSignal.timeout(CONFIG.timeout)
             }
@@ -145,65 +147,62 @@ async function fetchCodeChefStats() {
 
         const html = await response.text();
 
+        // Debug log (remove later)
         console.log("Received HTML length:", html.length);
 
-        const $ = cheerio.load(html);
-
         // Rating
-        const ratingText =
-            $('.rating-number').first().text().trim();
+        const ratingMatch =
+            html.match(/rating-number[^>]*>([\d,]+)</i);
 
-        const rating =
-            parseInt(ratingText.replace(/,/g, '')) || 0;
+        const rating = ratingMatch
+            ? parseInt(ratingMatch[1].replace(/,/g, ''))
+            : 0;
 
-        // Highest rating
-        let maxRating = rating;
+        // Global Rank
+        const globalRankMatch =
+            html.match(/Global Rank[\s\S]*?<strong>([\d,]+)<\/strong>/i);
 
-        $('aside .rating-data-section').each((_, el) => {
-            const text = $(el).text();
+        const globalRank = globalRankMatch
+            ? parseInt(globalRankMatch[1].replace(/,/g, ''))
+            : 0;
 
-            if (text.includes('Highest Rating')) {
-                const match = text.match(/(\d+)/);
+        // Country Rank
+        const countryRankMatch =
+            html.match(/Country Rank[\s\S]*?<strong>([\d,]+)<\/strong>/i);
 
-                if (match) {
-                    maxRating = parseInt(match[1]);
-                }
-            }
-        });
+        const countryRank = countryRankMatch
+            ? parseInt(countryRankMatch[1].replace(/,/g, ''))
+            : 0;
 
-        // Global & Country rank
-        let globalRank = 0;
-        let countryRank = 0;
+        // Max rating
+        const highestRatingMatch =
+            html.match(/Highest Rating[\s\S]*?>([\d,]+)</i);
 
-        $('.rating-ranks li').each((_, el) => {
-            const text = $(el).text();
+        const maxRating = highestRatingMatch
+            ? parseInt(highestRatingMatch[1].replace(/,/g, ''))
+            : rating;
 
-            if (text.includes('Global Rank')) {
-                const rank =
-                    $(el).find('strong').text();
-
-                globalRank =
-                    parseInt(rank.replace(/,/g, '')) || 0;
-            }
-
-            if (text.includes('Country Rank')) {
-                const rank =
-                    $(el).find('strong').text();
-
-                countryRank =
-                    parseInt(rank.replace(/,/g, '')) || 0;
-            }
-        });
-
-        // Stars
+        // Star calculation
         let stars = 0;
         if (rating >= 2700) stars = 7;
         else if (rating >= 2500) stars = 6;
         else if (rating >= 2200) stars = 5;
+        else if (rating >= 2000) stars = 4;
         else if (rating >= 1800) stars = 4;
         else if (rating >= 1600) stars = 3;
         else if (rating >= 1400) stars = 2;
         else if (rating >= 1200) stars = 1;
+
+        if (rating === 0) {
+            console.log(
+                "Could not parse CodeChef data. Saving HTML dump..."
+            );
+
+            require('fs').writeFileSync(
+                'codechef-debug.html',
+                html
+            );
+        }
 
         const stats = {
             username: CONFIG.codechefUsername,
@@ -220,16 +219,14 @@ async function fetchCodeChefStats() {
         console.log(`  Country Rank: ${countryRank}`);
 
         return stats;
-
     } catch (error) {
         console.error(
             '✗ Failed to fetch CodeChef stats:',
             error.message
         );
-
         return null;
     }
-} 
+}
 async function readExistingData() {
     try {
         const content = await fs.readFile(CONFIG.dataFilePath, 'utf-8');
