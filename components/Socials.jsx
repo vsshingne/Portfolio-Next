@@ -19,7 +19,7 @@ export const socialData = [
   },
   {
     name: "LeetCode",
-    link: "https://leetcode.com/u/VSPRIME",
+    link: "https://leetcode.com/u/vsprime2004",
     Icon: SiLeetcode,
   },
   {
