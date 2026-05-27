@@ -127,44 +127,106 @@ async function fetchCodeChefStats() {
         console.log(`Fetching CodeChef stats for ${CONFIG.codechefUsername}...`);
 
         const response = await fetch(
-            `https://codechef-api.vercel.app/handle/${CONFIG.codechefUsername}`,
+            `https://www.codechef.com/users/${CONFIG.codechefUsername}`,
             {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0'
+                    'User-Agent':
+                        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36',
+                    'Accept':
+                        'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Cache-Control': 'no-cache'
                 },
                 signal: AbortSignal.timeout(CONFIG.timeout)
             }
         );
 
         if (!response.ok) {
-            throw new Error(`API returned ${response.status}`);
+            throw new Error(`CodeChef returned ${response.status}`);
         }
 
-        const data = await response.json();
+        const html = await response.text();
 
-        if (!data.success) {
-            throw new Error('CodeChef user not found');
+        // Debug log (remove later)
+        console.log("Received HTML length:", html.length);
+
+        // Rating
+        const ratingMatch =
+            html.match(/rating-number[^>]*>([\d,]+)</i);
+
+        const rating = ratingMatch
+            ? parseInt(ratingMatch[1].replace(/,/g, ''))
+            : 0;
+
+        // Global Rank
+        const globalRankMatch =
+            html.match(/Global Rank[\s\S]*?<strong>([\d,]+)<\/strong>/i);
+
+        const globalRank = globalRankMatch
+            ? parseInt(globalRankMatch[1].replace(/,/g, ''))
+            : 0;
+
+        // Country Rank
+        const countryRankMatch =
+            html.match(/Country Rank[\s\S]*?<strong>([\d,]+)<\/strong>/i);
+
+        const countryRank = countryRankMatch
+            ? parseInt(countryRankMatch[1].replace(/,/g, ''))
+            : 0;
+
+        // Max rating
+        const highestRatingMatch =
+            html.match(/Highest Rating[\s\S]*?>([\d,]+)</i);
+
+        const maxRating = highestRatingMatch
+            ? parseInt(highestRatingMatch[1].replace(/,/g, ''))
+            : rating;
+
+        // Star calculation
+        let stars = 0;
+        if (rating >= 2700) stars = 7;
+        else if (rating >= 2500) stars = 6;
+        else if (rating >= 2200) stars = 5;
+        else if (rating >= 2000) stars = 4;
+        else if (rating >= 1800) stars = 4;
+        else if (rating >= 1600) stars = 3;
+        else if (rating >= 1400) stars = 2;
+        else if (rating >= 1200) stars = 1;
+
+        if (rating === 0) {
+            console.log(
+                "Could not parse CodeChef data. Saving HTML dump..."
+            );
+
+            require('fs').writeFileSync(
+                'codechef-debug.html',
+                html
+            );
         }
 
         const stats = {
             username: CONFIG.codechefUsername,
-            stars: parseInt(data.stars) || 0,
-            rating: parseInt(data.currentRating) || 0,
-            maxRating: parseInt(data.highestRating) || 0,
-            globalRank: parseInt(data.globalRank) || 0,
-            countryRank: parseInt(data.countryRank) || 0
+            stars,
+            rating,
+            maxRating,
+            globalRank,
+            countryRank
         };
 
         console.log('✓ CodeChef stats fetched successfully');
-        console.log(`  Rating: ${stats.rating} (${stats.stars}★)`);
+        console.log(`  Rating: ${rating} (${stars}★)`);
+        console.log(`  Global Rank: ${globalRank}`);
+        console.log(`  Country Rank: ${countryRank}`);
 
         return stats;
     } catch (error) {
-        console.error('✗ Failed to fetch CodeChef stats:', error.message);
+        console.error(
+            '✗ Failed to fetch CodeChef stats:',
+            error.message
+        );
         return null;
     }
-}
-/**
+}/**
  * Read existing data file
  */
 async function readExistingData() {
