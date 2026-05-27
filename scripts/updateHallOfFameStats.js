@@ -127,65 +127,43 @@ async function fetchCodeChefStats() {
         console.log(`Fetching CodeChef stats for ${CONFIG.codechefUsername}...`);
 
         const response = await fetch(
-            `https://www.codechef.com/users/${CONFIG.codechefUsername}`,
+            `https://codechef-api.vercel.app/handle/${CONFIG.codechefUsername}`,
             {
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    'User-Agent': 'Mozilla/5.0'
                 },
                 signal: AbortSignal.timeout(CONFIG.timeout)
             }
         );
 
         if (!response.ok) {
-            throw new Error(`CodeChef returned ${response.status}`);
+            throw new Error(`API returned ${response.status}`);
         }
 
-        const html = await response.text();
+        const data = await response.json();
 
-        // Extract rating from <div class="rating-number">1763</div>
-        const ratingMatch = html.match(/<div\s+class=["']rating-number["']>(\d+)<\/div>/i);
-        const rating = ratingMatch ? parseInt(ratingMatch[1]) : 0;
-
-        // Extract global rank from <strong>6499</strong></a> followed by Global Rank
-        const globalRankMatch = html.match(/<strong>(\d+)<\/strong><\/a>\s*Global\s+Rank/i);
-        const globalRank = globalRankMatch ? parseInt(globalRankMatch[1]) : 0;
-
-        // Extract country rank from <strong><strong>5555</strong></strong></a> followed by Country Rank
-        const countryRankMatch = html.match(/<strong>(\d+)<\/strong>(?:<\/strong>)?<\/a>\s*[^<]*Country\s+Rank/i);
-        const countryRank = countryRankMatch ? parseInt(countryRankMatch[1]) : 0;
-
-        // Calculate stars based on rating (based on actual CodeChef rating system)
-        // CodeChef star system: 1★ (1400-1599), 2★ (1600-1799), 3★ (1800-1999), 4★ (2000-2199), 5★ (2200-2499), 6★ (2500-2699), 7★ (2700+)
-        // However, the actual system uses: 3★ (1600-1800), 4★ (1800-2000), etc.
-        let stars = 0;
-        if (rating >= 2700) stars = 7;
-        else if (rating >= 2500) stars = 6;
-        else if (rating >= 2200) stars = 5;
-        else if (rating >= 2000) stars = 4;
-        else if (rating >= 1600) stars = 3;
-        else if (rating >= 1400) stars = 2;
-        else if (rating >= 1200) stars = 1;
+        if (!data.success) {
+            throw new Error('CodeChef user not found');
+        }
 
         const stats = {
             username: CONFIG.codechefUsername,
-            stars,
-            rating,
-            maxRating: rating, // We can't easily get historical max from the page
-            globalRank,
-            countryRank
+            stars: parseInt(data.stars) || 0,
+            rating: parseInt(data.currentRating) || 0,
+            maxRating: parseInt(data.highestRating) || 0,
+            globalRank: parseInt(data.globalRank) || 0,
+            countryRank: parseInt(data.countryRank) || 0
         };
 
         console.log('✓ CodeChef stats fetched successfully');
-        console.log(`  Rating: ${rating} (${stars}★)`);
-        console.log(`  Global Rank: ${globalRank}`);
-        console.log(`  Country Rank: ${countryRank}`);
+        console.log(`  Rating: ${stats.rating} (${stats.stars}★)`);
+
         return stats;
     } catch (error) {
         console.error('✗ Failed to fetch CodeChef stats:', error.message);
         return null;
     }
 }
-
 /**
  * Read existing data file
  */
