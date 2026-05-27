@@ -3,7 +3,7 @@ const path = require('path');
 
 // Configuration
 const CONFIG = {
-    leetcodeUsername: 'VSPRIME',
+    leetcodeUsername: 'vsprime2004',
     codechefUsername: 'vsprime',
     dataFilePath: path.join(__dirname, '../data/hallOfFameData.json'),
     timeout: 15000, // 15 seconds
