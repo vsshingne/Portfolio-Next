@@ -1,14 +1,14 @@
 {
   "leetcode": {
     "username": "vsprime2004",
-    "rating": 2042,
-    "maxRating": 2042,
-    "solved": 946,
+    "rating": 2043,
+    "maxRating": 2043,
+    "solved": 947,
     "easySolved": 268,
     "mediumSolved": 529,
-    "hardSolved": 149,
+    "hardSolved": 150,
     "percentile": "Top 2.0%",
-    "ranking": 36576,
+    "ranking": 36483,
     "badges": [
       {
         "id": "10293284",
@@ -228,5 +228,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-05-28"
+  "lastUpdated": "2026-05-29"
 }
