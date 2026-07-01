@@ -8,7 +8,7 @@
     "mediumSolved": 544,
     "hardSolved": 163,
     "percentile": "Top 2.0%",
-    "ranking": 33553,
+    "ranking": 33590,
     "badges": [
       {
         "id": "10293284",
@@ -89,6 +89,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
         "category": "ANNUAL",
         "creationDate": "2024-09-25"
+      },
+      {
+        "id": "10461140",
+        "name": "Jun LeetCoding Challenge",
+        "shortName": "Jun Badge",
+        "icon": "/static/images/badges/dcc-2026-6.png",
+        "category": "DCC",
+        "creationDate": "2026-06-30"
       },
       {
         "id": "10360396",
@@ -236,5 +244,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-06-30"
+  "lastUpdated": "2026-07-01"
 }
