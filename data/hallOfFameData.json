@@ -3,12 +3,12 @@
     "username": "vsprime2004",
     "rating": 2043,
     "maxRating": 2043,
-    "solved": 1005,
+    "solved": 1006,
     "easySolved": 280,
-    "mediumSolved": 556,
+    "mediumSolved": 557,
     "hardSolved": 169,
     "percentile": "Top 2.0%",
-    "ranking": 31725,
+    "ranking": 31658,
     "badges": [
       {
         "id": "10293284",
@@ -33,6 +33,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/lg365.png",
         "category": "SUBMISSION",
         "creationDate": "2025-11-20"
+      },
+      {
+        "id": "10546173",
+        "name": "200 Days Badge 2026",
+        "shortName": "200 Days Badge 2026",
+        "icon": "https://assets.leetcode.com/static_assets/others/200_1080_1080.png",
+        "category": "ANNUAL",
+        "creationDate": "2026-07-21"
       },
       {
         "id": "10032097",
@@ -244,5 +252,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-07-21"
+  "lastUpdated": "2026-07-22"
 }
