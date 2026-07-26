@@ -3,12 +3,12 @@
     "username": "vsprime2004",
     "rating": 2043,
     "maxRating": 2043,
-    "solved": 1009,
-    "easySolved": 279,
+    "solved": 1010,
+    "easySolved": 280,
     "mediumSolved": 560,
     "hardSolved": 170,
     "percentile": "Top 2.0%",
-    "ranking": 31430,
+    "ranking": 31339,
     "badges": [
       {
         "id": "10293284",
@@ -252,5 +252,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-07-25"
+  "lastUpdated": "2026-07-26"
 }
