@@ -5,10 +5,10 @@
     "maxRating": 2043,
     "solved": 1050,
     "easySolved": 293,
-    "mediumSolved": 577,
-    "hardSolved": 180,
+    "mediumSolved": 576,
+    "hardSolved": 181,
     "percentile": "Top 2.1%",
-    "ranking": 28588,
+    "ranking": 28610,
     "badges": [
       {
         "id": "10293284",
@@ -260,5 +260,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-08-29"
+  "lastUpdated": "2026-08-30"
 }
