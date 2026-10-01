@@ -3,12 +3,12 @@
     "username": "vsprime2004",
     "rating": 2043,
     "maxRating": 2043,
-    "solved": 1074,
+    "solved": 1075,
     "easySolved": 298,
-    "mediumSolved": 588,
+    "mediumSolved": 589,
     "hardSolved": 188,
     "percentile": "Top 2.1%",
-    "ranking": 27302,
+    "ranking": 27330,
     "badges": [
       {
         "id": "10293284",
@@ -97,6 +97,14 @@
         "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
         "category": "ANNUAL",
         "creationDate": "2024-09-25"
+      },
+      {
+        "id": "10860340",
+        "name": "Sep LeetCoding Challenge",
+        "shortName": "Sep Badge",
+        "icon": "/static/images/badges/dcc-2026-9.png",
+        "category": "DCC",
+        "creationDate": "2026-09-30"
       },
       {
         "id": "10733026",
@@ -268,5 +276,5 @@
     "globalRank": 0,
     "countryRank": 0
   },
-  "lastUpdated": "2026-09-30"
+  "lastUpdated": "2026-10-01"
 }
